@@ -1,0 +1,59 @@
+input {
+    background: transparent;
+    border: 1px solid $white;
+    outline: none;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: $white;
+    text-align: center;
+    padding: 2px;
+}
+
+.input-slider {
+    margin-bottom: 38px;
+    .input-slider-header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .slider-title {
+            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+        }
+        input {
+            max-width: 152px;
+        }
+    }
+    .input-slider-footer {
+        padding: 15px 30px 10px;
+    }
+    .min-and-max {
+        display: flex;
+        justify-content: space-between;
+        small {
+            font-weight: 300;
+            font-size: 0.8rem;
+            text-align: center;
+            padding: 0 6px;
+            min-width: 60px;
+        }
+    }
+}
+
+.material-slider {
+    .rc-slider-rail, .rc-slider-track  {
+        background-color: $white;
+        border-radius: 0;
+        height: 5px;
+    }
+    .rc-slider-handle {
+        border: none;
+        width: 16px;
+        height: 16px;
+        margin-top: -6px;
+        &:active {
+            box-shadow: none;
+        }
+    }
+}
